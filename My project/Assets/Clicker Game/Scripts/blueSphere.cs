@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class redSphere : MonoBehaviour
+public class blueSphere : MonoBehaviour
 {
-    public int hp = 5;
+    public int hp = 10;
 
-    public int points = 5;
+    public int points = 10;
     public float sizeScale = .2f;
     public scoreManager scoreManager;
     void OnMouseDown () {
@@ -21,5 +21,4 @@ public class redSphere : MonoBehaviour
             scoreManager.increaseScore(points);
         }
     }
-
 }
