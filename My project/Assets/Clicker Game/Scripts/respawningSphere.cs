@@ -6,18 +6,25 @@ public class respawningSphere : MonoBehaviour
 {
     public GameObject spawnPrefab;
     public float xPos = 0f, yPos = 0f, zPos = 2f;
-    public int hp = 0;
-    void start() {
+    public int hp = 5;
+    void Start() {
+        if (spawnPrefab != null) {
         Instantiate(spawnPrefab, Vector3.zero, Quaternion.identity);
-        hp = 5;
+        } else {
+            Debug.LogError("spawnPrefab not selected.");
+        }
     }
 
     void OnMouseDown () {
         hp--;
-
+        transform.localScale += new Vector3(.2f,.2f,.2f);
         if (hp == 0) {
             Destroy(gameObject);
-            spawnNew();
+            if (spawnPrefab != null) {
+                spawnNew();
+            } else {
+                Debug.LogError("Cannot respawn no prefab loaded.");
+            }
         }
     }
 

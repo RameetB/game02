@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7954730453366074485}
   - component: {fileID: 3700806207071229089}
   - component: {fileID: 8227662596328879102}
+  - component: {fileID: -1475395191412684272}
   m_Layer: 0
   m_Name: Blue Sphere
   m_TagString: Untagged
@@ -95,3 +96,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-1475395191412684272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3761990131771626449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36d0fdd91b90e674c9c6d563a307342f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPrefab: {fileID: 0}
+  xPos: 0
+  yPos: 0
+  zPos: 2
+  hp: 5
