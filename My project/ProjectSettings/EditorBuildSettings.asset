@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Clicker game.unity
-    guid: 58b245177ee90a440972586551938b02
+    path: Assets/Clicker Game/Scenes/Clicker Game.unity
+    guid: 3aa245d0ac2aa194095d8b7af52f4412
   m_configObjects: {}

@@ -16,7 +16,7 @@ public class respawningSphere : MonoBehaviour
 
         transform.localScale += Vector3.one * sizeScale;
 
-        if (hp == 0) {
+        if (hp <= 0) {
 
             Destroy(gameObject);
 
@@ -34,5 +34,6 @@ public class respawningSphere : MonoBehaviour
         points = newHp;
         Vector3 spawnPos = new Vector3(xPos, yPos, zPos);
         Instantiate(spawnPrefab, spawnPos, Quaternion.identity);
+        
     }
 }
