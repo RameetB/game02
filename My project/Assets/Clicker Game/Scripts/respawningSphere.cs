@@ -10,7 +10,7 @@ public class respawningSphere : MonoBehaviour
     public float xPos = 0f, yPos = 0f, zPos = 2f;
     public int hp = 5, points = 5;
 
-    public float sizeScale = .2f;    
+    public float sizeScale = .025f;    
     void OnMouseDown () {
         hp--;
 
@@ -34,6 +34,5 @@ public class respawningSphere : MonoBehaviour
         points = newHp;
         Vector3 spawnPos = new Vector3(xPos, yPos, zPos);
         Instantiate(spawnPrefab, spawnPos, Quaternion.identity);
-        transform.localScale = Vector3.one;
     }
 }
