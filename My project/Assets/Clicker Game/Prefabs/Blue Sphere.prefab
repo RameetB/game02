@@ -108,8 +108,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36d0fdd91b90e674c9c6d563a307342f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPrefab: {fileID: 0}
+  spawnPrefab: {fileID: 3761990131771626449}
+  scoreManager: {fileID: 0}
   xPos: 0
   yPos: 0
   zPos: 2
   hp: 5
+  points: 5
+  sizeScale: 0.2
