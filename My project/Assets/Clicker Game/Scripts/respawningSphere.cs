@@ -34,6 +34,6 @@ public class respawningSphere : MonoBehaviour
         points = newHp;
         Vector3 spawnPos = new Vector3(xPos, yPos, zPos);
         Instantiate(spawnPrefab, spawnPos, Quaternion.identity);
-        
+        transform.localScale = Vector3.one;
     }
 }
