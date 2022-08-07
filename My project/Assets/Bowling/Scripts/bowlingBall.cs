@@ -24,6 +24,6 @@ public class bowlingBall : MonoBehaviour
         }
    }
    public void moveAngle() {
-    
+    //yeye
  }
 }
