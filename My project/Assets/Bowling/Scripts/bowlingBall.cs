@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class bowlingBall : MonoBehaviour
 {
-   public float forwardForce, leftBorder, rightBorder, moveIncrements, angleIncrements;
+   public float forwardForce, leftBorder, rightBorder, moveIncrements, angleIncrements =  15.0f;
    public Rigidbody rigidBody;
 
     
@@ -24,6 +24,8 @@ public class bowlingBall : MonoBehaviour
         }
    }
    public void moveAngle() {
-    //yeye
+    Quaternion target = Quaternion.Euler(0, angleIncrements, 0);
+
+    transform.rotation = Quaternion.Slerp(transform.rotation, target, 1);
  }
 }
