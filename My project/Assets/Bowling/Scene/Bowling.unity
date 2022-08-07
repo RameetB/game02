@@ -252,7 +252,7 @@ MonoBehaviour:
   leftBorder: -2
   rightBorder: 2
   moveIncrements: 0.5
-  angleIncrements: 45
+  angleIncrements: 15
   rigidBody: {fileID: 145930078}
 --- !u!1 &348317337
 GameObject:
@@ -2277,7 +2277,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 35.6
+  field of view: 38.43225
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
