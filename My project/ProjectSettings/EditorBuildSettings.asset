@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Clicker Game/Scenes/Clicker Game.unity
     guid: 3aa245d0ac2aa194095d8b7af52f4412
+  - enabled: 1
+    path: Assets/Bowling/Scene/Bowling.unity
+    guid: 7112afca30ecbd04a8275c13297bc0ba
   m_configObjects: {}
