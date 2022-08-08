@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class bowlingBall : MonoBehaviour
 {
-   public float forwardForce, leftBorder, rightBorder, moveIncrements, posBorder, negBorder, angleIncrements = 15.0f;
+   public float forwardForce, leftBorder, rightBorder, moveIncrements, angleIncrements = 15.0f;
    public Rigidbody rigidBody;
-
+   public Transform target;
+   Quaternion currentRotation;
+   Vector3 currentAngle;
     
 
    public void Bowl () {
@@ -24,12 +26,23 @@ public class bowlingBall : MonoBehaviour
         }
    }
    public void moveAnglePos() {
-    Quaternion target = Quaternion.Euler(0, angleIncrements, 0);
-    transform.rotation = Quaternion.Slerp(transform.rotation, target, 1);
+    if (transform.localEulerAngles.y != 60) {
+        currentAngle = new Vector3(transform.rotation.x, transform.localEulerAngles.y, transform.rotation.z);
+        currentAngle += new Vector3(0, angleIncrements, 0);
+        currentRotation.eulerAngles = currentAngle;
+        transform.rotation = currentRotation;
+        print(currentRotation);
+    }
  }
     public void moveAngleNeg() {
-    Quaternion target = Quaternion.Euler(0, -angleIncrements, 0);
-    transform.rotation = Quaternion.Slerp(transform.rotation, target, 1);
+    if (transform.localEulerAngles.y != 300) {
+        currentAngle = new Vector3(transform.rotation.x, transform.localEulerAngles.y, transform.rotation.z);
+        currentAngle += new Vector3(0, -angleIncrements, 0);
+        currentRotation.eulerAngles = currentAngle;
+        transform.rotation = currentRotation;
+        print(currentRotation);
+    }
+    
  }
 
 }
