@@ -11,9 +11,7 @@ public class bowlingBall : MonoBehaviour
    Vector3 currentAngle;
    public GameObject arrow;
 
-   public void start () {
-    //jordan requested an arrow to indicate angle
-   }
+
 
    public void Bowl () {
        rigidBody.AddForce(transform.forward * forwardForce, ForceMode.Impulse);
