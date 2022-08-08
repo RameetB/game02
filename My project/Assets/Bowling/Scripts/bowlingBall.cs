@@ -30,8 +30,9 @@ public class bowlingBall : MonoBehaviour
         }
    }
    public void moveAnglePos() {
-    if (transform.localEulerAngles.y <= 60) {
-        currentAngle = new Vector3(transform.rotation.x, transform.localEulerAngles.y, transform.rotation.z);
+    if (transform.localEulerAngles.y >= 300 || transform.localEulerAngles.y <= 60) {
+        currentAngle = new Vector3(transform.rotation.x, Mathf.Round(transform.localEulerAngles.y), transform.rotation.z);
+        print(currentAngle);
         currentAngle += new Vector3(0, angleIncrements, 0);
         currentRotation.eulerAngles = currentAngle;
         transform.rotation = currentRotation;
