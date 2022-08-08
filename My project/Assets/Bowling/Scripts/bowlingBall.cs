@@ -30,12 +30,12 @@ public class bowlingBall : MonoBehaviour
         }
    }
    public void moveAnglePos() {
-    if (transform.localEulerAngles.y != 60) {
+    if (transform.localEulerAngles.y <= 60) {
         currentAngle = new Vector3(transform.rotation.x, transform.localEulerAngles.y, transform.rotation.z);
         currentAngle += new Vector3(0, angleIncrements, 0);
         currentRotation.eulerAngles = currentAngle;
         transform.rotation = currentRotation;
-        print(currentRotation);
+        print(transform.localEulerAngles.y);
     }
  }
     public void moveAngleNeg() {
@@ -44,7 +44,7 @@ public class bowlingBall : MonoBehaviour
         currentAngle += new Vector3(0, -angleIncrements, 0);
         currentRotation.eulerAngles = currentAngle;
         transform.rotation = currentRotation;
-        print(currentRotation);
+        print(transform.localEulerAngles.y);
     }
     
  }
