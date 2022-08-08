@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class bowlingBall : MonoBehaviour
 {
-   public float forwardForce, leftBorder, rightBorder, moveIncrements, angleIncrements = 15.0f;
+   public float forwardForce, leftBorder, rightBorder, moveIncrements, posBorder, negBorder, angleIncrements = 15.0f;
    public Rigidbody rigidBody;
 
     
