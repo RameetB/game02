@@ -9,7 +9,7 @@ public class bowlingBall : MonoBehaviour
    public Transform target;
    Quaternion currentRotation;
    Vector3 currentAngle;
-    
+   public GameObject arrow;
 
    public void start () {
     //jordan requested an arrow to indicate angle
@@ -17,6 +17,7 @@ public class bowlingBall : MonoBehaviour
 
    public void Bowl () {
        rigidBody.AddForce(transform.forward * forwardForce, ForceMode.Impulse);
+       arrow.SetActive(false);
    }
 
    public void moveLeft() {
