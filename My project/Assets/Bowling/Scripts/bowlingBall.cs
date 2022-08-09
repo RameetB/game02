@@ -11,7 +11,25 @@ public class bowlingBall : MonoBehaviour
    Vector3 currentAngle;
    public GameObject arrow;
 
-
+    public void Update() {
+        if (Input.GetKeyDown("a")) {
+            moveLeft();
+        }
+        if (Input.GetKeyDown("d")) {
+            moveRight();
+        }
+        if (Input.GetKeyDown("q")) {
+            moveAngleNeg();
+        }
+        if (Input.GetKeyDown("e")) {
+           moveAnglePos();
+        }
+        if (Input.GetKeyDown("space")) {
+            Bowl();
+        }
+        
+        
+    }
 
    public void Bowl () {
        rigidBody.AddForce(transform.forward * forwardForce, ForceMode.Impulse);
