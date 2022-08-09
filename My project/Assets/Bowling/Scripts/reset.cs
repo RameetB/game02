@@ -9,4 +9,9 @@ public class reset : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         print("reset button pressed");
     }
+    public void Update() {
+        if (Input.GetKeyDown("t")) {
+            resetGame();
+        }
+    }
 }
