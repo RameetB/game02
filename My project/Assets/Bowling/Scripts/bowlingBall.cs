@@ -15,6 +15,18 @@ public class bowlingBall : MonoBehaviour
         if (Input.GetKeyDown("a")) {
             moveLeft();
         }
+        if (Input.GetKeyDown("d")) {
+            moveRight();
+        }
+        if (Input.GetKeyDown("q")) {
+            moveAngleNeg();
+        }
+        if (Input.GetKeyDown("e")) {
+            moveAnglePos();
+        }
+        if (Input.GetKeyDown("space")) {
+            Bowl();
+        }
         
         
     }
