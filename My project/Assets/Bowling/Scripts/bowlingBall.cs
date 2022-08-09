@@ -22,7 +22,7 @@ public class bowlingBall : MonoBehaviour
             moveAngleNeg();
         }
         if (Input.GetKeyDown("e")) {
-            moveAnglePos();
+           moveAnglePos();
         }
         if (Input.GetKeyDown("space")) {
             Bowl();
